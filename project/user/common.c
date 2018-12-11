@@ -3,7 +3,7 @@
 #include "Common.h"
 #include "Delay.h"
 #include "SFR_Macro.h"
-#include "Function_define.h"
+#include "define.h"
 
 //----------------------------------------------------------------------------------
 // UART0 baud rate initial setting 
