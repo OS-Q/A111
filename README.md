@@ -1,4 +1,4 @@
-﻿# D1: [N76E003-ADC](https://github.com/OS-Q/D1) 
+﻿# D1: [低成本ADC设备](https://github.com/OS-Q/D1) 
 
 [![sites](OS-Q/OS-Q.png)](http://www.OS-Q.com)
 
@@ -8,7 +8,7 @@
 
 ## [设备描述](https://github.com/OS-Q/D1/wiki) 
 
-N76E003拥有12bit ADC外设，可用于采集电压信号，基于keil开发工具
+N76E003拥有12bit ADC外设，基于keil工具开发
 
 ### [包含资源](https://github.com/OS-Q/D1/wiki) 
 
@@ -16,9 +16,9 @@ N76E003拥有12bit ADC外设，可用于采集电压信号，基于keil开发工
 
 包括芯片datasheet等
 
-#### [keil工程文件](project/)
+#### [keil工程](project/)
 
-包含ADC工程，基于KEIL C51工程源码
+基于KEIL C51工程 ADC转换源码
 
 ---
 
