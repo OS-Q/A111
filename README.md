@@ -10,6 +10,8 @@
 
 N76E003拥有12bit ADC外设，基于keil工具开发
 
+CH552单片机拥有较高的频率和低廉的价格，同时具有USB通信能力
+
 ### [包含资源](https://github.com/OS-Q/D1/wiki) 
 
 #### [资料手册](docs/)
