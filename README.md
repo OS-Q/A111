@@ -10,7 +10,7 @@
 
 N76E003拥有12bit ADC外设，基于keil工具开发
 
-CH552单片机拥有较高的频率和低廉的价格，同时具有USB通信能力
+CH552拥有较高的频率和低廉的价格具有USB通信能力
 
 ### [包含资源](https://github.com/OS-Q/D1/wiki) 
 
@@ -20,7 +20,7 @@ CH552单片机拥有较高的频率和低廉的价格，同时具有USB通信能
 
 #### [keil工程](project/)
 
-基于KEIL C51工程 ADC转换源码
+基于KEIL C51工程ADC转换
 
 ---
 
@@ -30,11 +30,11 @@ CH552单片机拥有较高的频率和低廉的价格，同时具有USB通信能
 
 #### -> D1：[低成本设备](https://github.com/OS-Q/D1)
 
-低成本板载多通道12bit ADC信号转换（N76E003）
+低成本板载多通道12bit ADC信号转换
 
 #### D2：[低功耗设备](https://github.com/OS-Q/D2)
 
-低功耗低成本多通道集成12bit ADC转换（STM8L）
+低功耗低成本多通道集成12bit ADC转换
 
 #### D3：[高精度设备](https://github.com/OS-Q/D3)
 
@@ -44,15 +44,17 @@ CH552单片机拥有较高的频率和低廉的价格，同时具有USB通信能
 
 具有大于8通道可以同时采集转换
 
-#### D5：[NULL](https://github.com/OS-Q/D5)
+#### D5：[宽范围设备](https://github.com/OS-Q/D5)
 
+具有较大的信号采集区间
 
-#### D6：[NULL](https://github.com/OS-Q/D6)
+#### D6：[低时延设备](https://github.com/OS-Q/D6)
 
+具有快速转换的速度
 
+#### D7：[高可靠设备](https://github.com/OS-Q/D7)
 
-#### D7：[NULL](https://github.com/OS-Q/D7)
-
+具有长时间稳定可靠工作性能
 
 ---
 

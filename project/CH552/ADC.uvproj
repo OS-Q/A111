@@ -374,22 +374,22 @@
       </TargetOption>
       <Groups>
         <Group>
-          <GroupName>CH552</GroupName>
+          <GroupName>user</GroupName>
           <Files>
             <File>
               <FileName>main.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\usr\main.c</FilePath>
+              <FilePath>.\user\main.c</FilePath>
             </File>
             <File>
               <FileName>ADC.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\usr\ADC.c</FilePath>
+              <FilePath>.\user\ADC.c</FilePath>
             </File>
             <File>
               <FileName>Debug.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\usr\Debug.c</FilePath>
+              <FilePath>.\user\Debug.c</FilePath>
             </File>
           </Files>
         </Group>
