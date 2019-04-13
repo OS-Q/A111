@@ -1,65 +1,34 @@
-﻿# D1: [低成本ADC设备](https://github.com/OS-Q/D1) 
-
+﻿# [广域对接A](https://github.com/OS-Q/D1)
 [![sites](OS-Q/OS-Q.png)](http://www.OS-Q.com)
-
-#### 归属电气采集：[W1](https://github.com/OS-Q/W1)
-
+####  qitas@qitas.cn
+#### 归属信号采集：[W1](https://github.com/OS-Q/W1)
 #### 关于系统架构：[OS-Q](https://github.com/OS-Q/OS-Q)
+边缘设备命名：体系 Q[1,4] -> 节点 M[1,12] -> 平台 W[1,52] -> 设备 D[1,365]
+### [设备描述](https://github.com/OS-Q/D1/wiki) 
 
-## [设备描述](https://github.com/OS-Q/D1/wiki) 
+高性价比嵌入式AD采集设备，拥有多通道高精度ADC转换外设，低BOM成本
 
-N76E003拥有12bit ADC外设，基于keil工具开发
+### [设备资源](OS-Q/)
 
-CH552拥有较高的频率和低廉的价格具有USB通信能力
+- [资源](src/)
+- [文档](docs/)
+- [工程](project/)
 
-### [包含资源](https://github.com/OS-Q/D1/wiki) 
+平台底层资源：
 
-#### [资料手册](docs/)
+- [N76E003](https://github.com/sochub/N76E003) 
+- [CH546](https://github.com/sochub/CH546) 
 
-包括芯片datasheet等
 
-#### [keil工程](project/)
+### [同级设备](https://github.com/OS-Q/W1)
 
-基于KEIL C51工程ADC转换
+- D1：[低成本设备](https://github.com/OS-Q/D1)
+- D2：[低功耗设备](https://github.com/OS-Q/D2)
+- D3：[高精度设备](https://github.com/OS-Q/D3)
+- D4：[多通道设备](https://github.com/OS-Q/D4)
+- D5：[宽范围设备](https://github.com/OS-Q/D5)
+- D6：[低时延设备](https://github.com/OS-Q/D6)
+- D7：[高可靠设备](https://github.com/OS-Q/D7)
 
----
-
-- 边缘设备统一命名规则：体系 Q:[1,4] -> 节点 M:[1,12] -> 平台 W:[1,52] -> 设备 D:[1,365]
-
-## [同级设备](https://github.com/OS-Q/W1/wiki)
-
-#### -> D1：[低成本设备](https://github.com/OS-Q/D1)
-
-低成本板载多通道12bit ADC信号转换
-
-#### D2：[低功耗设备](https://github.com/OS-Q/D2)
-
-低功耗低成本多通道集成12bit ADC转换
-
-#### D3：[高精度设备](https://github.com/OS-Q/D3)
-
-具有大于14bit ADC采样转换精度
-
-#### D4：[多通道设备](https://github.com/OS-Q/D4)
-
-具有大于8通道可以同时采集转换
-
-#### D5：[宽范围设备](https://github.com/OS-Q/D5)
-
-具有较大的信号采集区间
-
-#### D6：[低时延设备](https://github.com/OS-Q/D6)
-
-具有快速转换的速度
-
-#### D7：[高可靠设备](https://github.com/OS-Q/D7)
-
-具有长时间稳定可靠工作性能
-
----
-
-####  © qitas@qitas.cn
-###  [OS-Q redefined Operation System](http://www.OS-Q.com)
-####  @ 2018-12-11
-
----
+### [Q : Operation System for edge devices](http://www.OS-Q.com/Edge/M6)
+####  2019-4-13
