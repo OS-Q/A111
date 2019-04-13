@@ -1,4 +1,4 @@
-﻿# [广域对接A](https://github.com/OS-Q/D1)
+﻿# [低成本ADC设备](https://github.com/OS-Q/D1)
 [![sites](OS-Q/OS-Q.png)](http://www.OS-Q.com)
 ####  qitas@qitas.cn
 #### 归属信号采集：[W1](https://github.com/OS-Q/W1)
@@ -17,15 +17,15 @@
 平台底层资源：
 
 - [N76E003](https://github.com/sochub/N76E003) 
-- [CH546](https://github.com/sochub/CH546) 
+- [CH54](https://github.com/sochub/CH54) 
 
 
 ### [同级设备](https://github.com/OS-Q/W1)
 
-- D1：[低成本设备](https://github.com/OS-Q/D1)
-- D2：[低功耗设备](https://github.com/OS-Q/D2)
-- D3：[高精度设备](https://github.com/OS-Q/D3)
-- D4：[多通道设备](https://github.com/OS-Q/D4)
+- D1：[低成本ADC设备](https://github.com/OS-Q/D1)
+- D2：[低功耗ADC设备](https://github.com/OS-Q/D2)
+- D3：[高精度ADC设备](https://github.com/OS-Q/D3)
+- D4：[多通道ADC设备](https://github.com/OS-Q/D4)
 - D5：[宽范围设备](https://github.com/OS-Q/D5)
 - D6：[低时延设备](https://github.com/OS-Q/D6)
 - D7：[高可靠设备](https://github.com/OS-Q/D7)
