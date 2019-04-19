@@ -7,6 +7,10 @@ typedef unsigned char         uint8_t;
 typedef unsigned int          uint16_t;
 typedef unsigned long         uint32_t;
 
+typedef unsigned char         u8;
+typedef unsigned int          u16;
+typedef unsigned long         u32;
+
 
 
 

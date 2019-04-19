@@ -1,9 +1,3 @@
-/*--------------------------------------------------------------------------
-N76E003 Function_define.h V1.02
-
-All function define inital setting file for Nuvoton N76E003
---------------------------------------------------------------------------*/
-
 #include <intrins.h>
 #include <stdio.h>
 
