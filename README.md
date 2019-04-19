@@ -1,12 +1,12 @@
-﻿# [低成本ADC设备](https://github.com/OS-Q/D1)
+﻿# [ADC低成本](https://github.com/OS-Q/D1)
 [![sites](OS-Q/OS-Q.png)](http://www.OS-Q.com)
 ####  qitas@qitas.cn
-#### 归属信号采集：[W1](https://github.com/OS-Q/W1)
+#### 归属直流信号：[W1](https://github.com/OS-Q/W1)
 #### 关于系统架构：[OS-Q](https://github.com/OS-Q/OS-Q)
 体系 Q[1,4] -> 节点 M[1,12] -> 平台 W[1,52] -> 设备 D[1,365]
 ### [设备描述](https://github.com/OS-Q/D1/wiki) 
 
-高性价比嵌入式ADC采集平台，拥有高精度ADC转换外设，极低的设备BOM成本
+ADC低成本设备，采用合理的器件和设计，使设备极低的设备BOM成本，便于大量部署在低价值目标上。
 
 ### [设备资源](https://github.com/OS-Q/)
 
@@ -20,13 +20,13 @@
 
 ### [同级设备](https://github.com/OS-Q/W1)
 
-- D1：[低成本ADC设备](https://github.com/OS-Q/D1)
-- D2：[低功耗ADC设备](https://github.com/OS-Q/D2)
-- D3：[高精度ADC设备](https://github.com/OS-Q/D3)
-- D4：[多通道ADC设备](https://github.com/OS-Q/D4)
-- D5：[宽范围设备](https://github.com/OS-Q/D5)
-- D6：[低时延设备](https://github.com/OS-Q/D6)
-- D7：[高可靠设备](https://github.com/OS-Q/D7)
+- D1：[ADC低成本](https://github.com/OS-Q/D1)
+- D2：[ADC性价比](https://github.com/OS-Q/D2)
+- D3：[ADC低功耗](https://github.com/OS-Q/D3)
+- D4：[ADC高密度](https://github.com/OS-Q/D4)
+- D5：[ADC高精度](https://github.com/OS-Q/D5)
+- D6：[电流采集](https://github.com/OS-Q/D6)
+- D7：[电容采集](https://github.com/OS-Q/D7)
 
 ### [OS-Q : Operation System for edge devices](http://www.OS-Q.com/Edge/D1)
-####  2019-4-19
+####  2019-4-19  
