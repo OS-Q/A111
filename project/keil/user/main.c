@@ -6,7 +6,6 @@
 #include "adc.h"
 
 
-				
 /******************************************************************************
 The main C function.  Program execution starts
 here after stack initialization.
@@ -15,7 +14,8 @@ void main(void)
 {	
 		u16 AdcVal=0;
 		Timer0_Delay1ms(300);
-		while(1){
+		while(1)
+		{
 			  AdcVal=adc();
 		}
 }

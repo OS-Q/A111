@@ -1,34 +1,44 @@
-﻿# [ADC低成本](https://github.com/OS-Q/D1)
+﻿# [COM-ADC](https://github.com/OS-Q/D1)
+
 [![sites](OS-Q/OS-Q.png)](http://www.OS-Q.com)
-####  qitas@qitas.cn
+
 #### 归属电压输入：[W1](https://github.com/OS-Q/W1)
+
 #### 关于系统架构：[OS-Q](https://github.com/OS-Q/OS-Q)
+
 Edge-Q -> 体系 Q[1,4] -> 节点 M[1,12] -> 平台 W[1,52] -> 设备 D[1,365]
+
 ### [设备描述](https://github.com/OS-Q/D1/wiki) 
 
-ADC低成本设备，采用合理的器件和设计，使设备极低的设备BOM成本，便于大量部署在低价值目标上。
+COM-ADC嵌入设备，通过嵌入到传感器内部采集数据并通过固定的协议格式将数据传出，实现上位机的自适应获得。
 
-### [设备资源](https://github.com/OS-Q/)
+D1工程定义的核心在于标准化的上层通信和驱动逻辑，同时可快速替换的采集逻辑，实现平台的功能特性。
 
-- [资源](src/)
-- [文档](docs/)
-- [工程](project/)
+### [开放资源](https://github.com/OS-Q/)
 
-### [硬件资源](https://github.com/sochub)
+* [文档](docs/)
+	* [芯片手册](docs/)
+	* [参考设计](docs/)
+* [工程](project/)
+	* [keil工程](project/keil)
 
-- [N76E003](https://github.com/sochub/N76E003) 
+### [平台资源](https://github.com/sochub)
+
+目前定义的D1设备采用新唐的8051单片机N76E003作为主控核心，也是唯一的板载编程单元，相关的设计资料和选型方案优劣可查阅
+[SoC资源平台](https://github.com/sochub)
+
+* [N76E003](https://github.com/sochub/N76E003) 
 
 ### [设备结构](https://github.com/OS-Q/W1)
 
-* W1：[电压输入](https://github.com/OS-Q/W1)
-	* D1：[ADC低成本](https://github.com/OS-Q/D1)
-	* D2：[ADC性价比](https://github.com/OS-Q/D2)
-	* D3：[ADC低功耗](https://github.com/OS-Q/D3)
-	* D4：[ADC高密度](https://github.com/OS-Q/D4)
-	* D5：[ADC高精度](https://github.com/OS-Q/D5)
-	* D6：[电流转换](https://github.com/OS-Q/D6)
-	* D7：[电容转换](https://github.com/OS-Q/D7)
-
+* W1：[嵌入模块](https://github.com/OS-Q/W1)
+	* D1：COM-ADC
+	* D2：[COM-IIC](https://github.com/OS-Q/D2)
+	* D3：[COM-COM](https://github.com/OS-Q/D3)
+	* D4：[COM-CNT](https://github.com/OS-Q/D4)
+	* D5：[COM-IRQ](https://github.com/OS-Q/D5)
+	* D6：[USB-DRV](https://github.com/OS-Q/D6)
+	* D7：[RF-LP](https://github.com/OS-Q/D7)
 
 ### [OS-Q : Operation System for edge devices](http://www.OS-Q.com/Edge/D1)
-####  2019-4-25 
+####  2019-5-29
