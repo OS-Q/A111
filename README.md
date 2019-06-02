@@ -17,9 +17,8 @@ COM-ADC嵌入设备，通过嵌入到传感器内部采集数据并通过固定�
 ### [开放资源](https://github.com/OS-Q/)
 
 * [文档](docs/)
-	* [芯片手册](docs/)
-	* [参考设计](docs/)
 * [工程](project/)
+	* [ISP工程](project/ISP)
 	* [keil工程](project/keil)
 
 ### [平台资源](https://github.com/sochub)
