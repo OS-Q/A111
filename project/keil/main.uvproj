@@ -7,7 +7,7 @@
 
   <Targets>
     <Target>
-      <TargetName>GPIO</TargetName>
+      <TargetName>Qitas</TargetName>
       <ToolsetNumber>0x0</ToolsetNumber>
       <ToolsetName>MCS-51</ToolsetName>
       <uAC6>0</uAC6>
@@ -377,9 +377,9 @@
           <GroupName>user</GroupName>
           <Files>
             <File>
-              <FileName>Print_UART1.C</FileName>
+              <FileName>main.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\user\Print_UART1.C</FilePath>
+              <FilePath>.\user\main.c</FilePath>
             </File>
             <File>
               <FileName>PUTCHAR.C</FileName>
