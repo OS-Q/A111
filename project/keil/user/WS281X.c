@@ -1,8 +1,8 @@
 /********************************** (C) COPYRIGHT *******************************
-* File Name          : WS281X.H											
-* Author             : Qitas                                               
-* Version            : V1.0                                                     
-* Date               : 2019/06/04                                             
+* File Name          : WS281X.C											*	
+* Author             : Qitas                                                  *
+* Version            : V1.0                                                     *
+* Date               : 2019/06/04                                               *
 * Description        : 
 ********************************************************************************/
 
@@ -11,29 +11,17 @@
 #include <stdio.h>
 
 #include "N76E003.h"
-#include "WS28128.h"
+#include "WS281X.h"
+
 
 /****************************硬件参数调整*********************************/
 
 void H1_nop_800ns(){
-	_nop_();_nop_();_nop_();_nop_();_nop_();
-	_nop_();_nop_();_nop_();_nop_();_nop_();
-	_nop_();_nop_();_nop_();_nop_();_nop_();
-	_nop_();
+	_nop_();_nop_();_nop_();
 }
-void L1_nop_450ns(){
-	_nop_();_nop_();_nop_();_nop_();_nop_();
-	_nop_();_nop_();_nop_();_nop_();
-}
+
 void H0_nop_400ns(){
-	_nop_();_nop_();_nop_();_nop_();_nop_();
-	_nop_();_nop_();_nop_();
-}
-void L0_nop_850ns(){
-	_nop_();_nop_();_nop_();_nop_();_nop_();
-	_nop_();_nop_();_nop_();_nop_();_nop_();
-	_nop_();_nop_();_nop_();_nop_();_nop_();
-	_nop_();_nop_();_nop_();
+	_nop_();
 }
 
 /*******************************************************************************
@@ -44,10 +32,9 @@ void L0_nop_850ns(){
 * Return         : None
 *******************************************************************************/
 
-void Din_1(void) 
-{
+void Din_1(void) {
 	WS_IO_HIGH();
-  H1_nop_800ns();
+        H1_nop_800ns();
 	WS_IO_LOW();
 	//L1_nop_450ns();
 }
@@ -62,7 +49,7 @@ void Din_1(void)
 
 void Din_0(void) {
 	WS_IO_HIGH();
-	H0_nop_400ns();
+		_nop_();_nop_();
 	WS_IO_LOW();
 	//L0_nop_850ns();
 }
@@ -95,6 +82,7 @@ void Send_WS_8bits(U8 dat)
 	{
 		if(dat & 0x80) {//1,for "1",H:0.8us,L:0.45us;
 			Din_1();
+
 		} 
 		else {		//0,for "0",H:0.4us,L:0.85us
 			Din_0();
@@ -113,9 +101,10 @@ void Send_WS_8bits(U8 dat)
 void Send_WS_24bits(U8 RData,U8 GData,U8 BData) 
 {
 	//G--R--B
-	Send_WS_8bits(GData*(ring_brightness_duty/255));
-	Send_WS_8bits(RData*(ring_brightness_duty/255));
-	Send_WS_8bits(BData*(ring_brightness_duty/255));
+	Send_WS_8bits(GData*ring_brightness_duty/255);
+	Send_WS_8bits(RData*ring_brightness_duty/255);
+	Send_WS_8bits(BData*ring_brightness_duty/255);
+
 }
 
 /*******************************************************************************
@@ -157,3 +146,9 @@ U8 WS_frame_sync(U8* Ptr)
 
 
 /************************ (C) COPYRIGHT OAZON ******************END OF FILE****/
+void ring_display_clear(){
+	U8 jk;
+	for( jk=0; jk<WS_LED_NUM; jk++) {
+		Send_WS_24bits(0x00,0x00,0x00);
+	}
+}

@@ -1,21 +1,25 @@
 /********************************** (C) COPYRIGHT *******************************
-* File Name          : WS281X.H											
-* Author             : Qitas                                               
-* Version            : V1.0                                                     
-* Date               : 2019/06/04                                             
+* File Name          : WS281X.H											*	
+* Author             : Qitas                                                  *
+* Version            : V1.0                                                     *
+* Date               : 2019/06/04                                        *
 * Description        : 
 ********************************************************************************/
+
 #ifndef	__WS281X_H__
 #define __WS281X_H__
 
 
-#define 	WS_LED_NUM	 	(n)				/*WS灯的数量*/
+#include "common.h"
+
+#define 	WS_LED_NUM	 	(10)				/*WS灯的数量*/
 #define 	WS_DAT_LEN	 	(WS_LED_NUM*3)		       /*WS数据的长度*/
 
-#define  	ring_brightness_duty   		 255
+#define  	ring_brightness_duty   		 50
 
 /****************************硬件IO配置*********************************/
-sbit LED_RING=Pn^n;
+//sbit LED_RING = P0^5;
+sbit LED_RING = P1^2;
 #define 	WS_IO_LOW() 	(LED_RING=0)
 #define 	WS_IO_HIGH() 	(LED_RING=1)
 
@@ -28,6 +32,8 @@ sbit LED_RING=Pn^n;
 #define  U16X 	UINT16X
 #define  U32X 	UINT32X
 
+
+
 /****************************函数定义*********************************/
 
 void H1_nop_800ns();
@@ -37,8 +43,9 @@ void L0_nop_850ns();
 void Din_1(void);
 void Din_0(void);
 void Send_WS_8bits(U8 dat);
-void Send_WS_24bits(U8 RData,U8 GData,U8 BData) ;
+void Send_WS_24bits(U8 RData,U8 GData,U8 BData);
 void WS_rst(void);
+void ring_display_clear();
 U8 WS_frame_asyn(U8* Ptr);
 U8 WS_frame_sync(U8* Ptr);
 

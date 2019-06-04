@@ -1,12 +1,18 @@
+#include <string.h>
+#include <intrins.h> 
+#include <stdio.h>
+
 #include "N76E003.h"
-#include "define.h"
-#include "common.h"
-#include "delay.h"
-#include "adc.h"
+#include "WS281X.h"
 #include "SFR_Macro.h"
+#include "define.h"
+
+
+//#include "common.h"
+//#include "delay.h"
+#include "adc.h"
 
 #include "uart.h"
-#include "WS281X.h"
 
 unsigned char temp _at_ 0x08;
 unsigned char idata itemp _at_ 0x80;
