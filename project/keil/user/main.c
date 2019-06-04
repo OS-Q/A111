@@ -6,7 +6,7 @@
 #include "SFR_Macro.h"
 
 #include "uart.h"
-
+#include "WS281X.h"
 
 unsigned char temp _at_ 0x08;
 unsigned char idata itemp _at_ 0x80;
