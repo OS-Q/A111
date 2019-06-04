@@ -382,9 +382,9 @@
               <FilePath>.\user\main.c</FilePath>
             </File>
             <File>
-              <FileName>PUTCHAR.C</FileName>
+              <FileName>uart.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\user\PUTCHAR.C</FilePath>
+              <FilePath>.\user\uart.c</FilePath>
             </File>
           </Files>
         </Group>
