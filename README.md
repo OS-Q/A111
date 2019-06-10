@@ -23,23 +23,21 @@ COM-ADC嵌入设备，通过嵌入到传感器内部采集数据并通过固定�
 
 ### [平台资源](https://github.com/sochub)
 
-目前定义的[Edge-D1](https://github.com/OS-Q/D1)设备采用QFN封装单片机（单主控），主要采用新唐的8051单片机N76E003作为主控核心，也是D1设备中唯一的程单元，相关的设计资料和选型方案优劣可查阅
+主控资料和选型方案详情可查阅
 [SoC资源平台](https://github.com/sochub)
 
 * [N76E003](https://github.com/sochub/N76E003)
-
-后续稳定后可能添加其他的替代方案
 
 ### [设备结构](https://github.com/OS-Q/W1)
 
 * W1：[嵌入模块](https://github.com/OS-Q/W1)
 	* D1：COM-ADC
 	* D2：[COM-IIC](https://github.com/OS-Q/D2)
-	* D3：[COM-COM](https://github.com/OS-Q/D3)
+	* D3：[COM-DAC](https://github.com/OS-Q/D3)
 	* D4：[COM-CNT](https://github.com/OS-Q/D4)
 	* D5：[COM-IRQ](https://github.com/OS-Q/D5)
 	* D6：[USB-DRV](https://github.com/OS-Q/D6)
-	* D7：[RF-LP](https://github.com/OS-Q/D7)
+	* D7：[COM-LPW](https://github.com/OS-Q/D7)
 
 ### [OS-Q : Operation System for edge devices](http://www.OS-Q.com/Edge/D1)
-####  2019-5-29
+####  2019-6-10

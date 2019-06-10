@@ -23,6 +23,9 @@ here after stack initialization.
 ******************************************************************************/
 void main(void) 
 {	
+	char *i ="test";
 	InitUART();
+	printf("power level=%s",i);
+	while(1);
 }
 

@@ -29,7 +29,6 @@ void InitUART(void)
 		Timer0_Delay1ms(300);
 	}
 }
-
 #else
 char putchar (char c)  			//for UART0_printf
 {				
@@ -37,15 +36,11 @@ char putchar (char c)  			//for UART0_printf
   TI = 0;
   return (SBUF = c);
 }
+
 void InitUART(void) 
 {
-	InitialUART0_Timer3(115200);
-	TI = 1;														
-	while(1)
-	{
-		printf("\n Hello world");
-		Timer0_Delay1ms(300);
-	}
+		InitialUART0_Timer3(115200);
+		TI = 1;														
 }
 
 #endif
