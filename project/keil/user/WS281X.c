@@ -145,7 +145,6 @@ U8 WS_frame_sync(U8* Ptr)
 }
 
 
-/************************ (C) COPYRIGHT OAZON ******************END OF FILE****/
 void ring_display_clear(){
 	U8 jk;
 	for( jk=0; jk<WS_LED_NUM; jk++) {
