@@ -1,6 +1,48 @@
-# See: https://arduino.github.io/arduino-cli/latest/platform-specification/
+# See: http://code.google.com/p/arduino/wiki/Platforms
 
 menu.cpu=Processor
+
+##############################################################
+
+yun.name=Arduino Yún
+yun.upload.via_ssh=true
+
+yun.vid.0=0x2341
+yun.pid.0=0x0041
+yun.vid.1=0x2341
+yun.pid.1=0x8041
+yun.vid.2=0x2A03
+yun.pid.2=0x0041
+yun.vid.3=0x2A03
+yun.pid.3=0x8041
+
+yun.upload.tool=avrdude
+yun.upload.protocol=avr109
+yun.upload.maximum_size=28672
+yun.upload.maximum_data_size=2560
+yun.upload.speed=57600
+yun.upload.disable_flushing=true
+yun.upload.use_1200bps_touch=true
+yun.upload.wait_for_upload_port=true
+
+yun.bootloader.tool=avrdude
+yun.bootloader.low_fuses=0xff
+yun.bootloader.high_fuses=0xd8
+yun.bootloader.extended_fuses=0xfb
+yun.bootloader.file=caterina/Caterina-Yun.hex
+yun.bootloader.noblink=caterina/Caterina-Yun-noblink.hex
+yun.bootloader.unlock_bits=0x3F
+yun.bootloader.lock_bits=0x2F
+
+yun.build.mcu=atmega32u4
+yun.build.f_cpu=16000000L
+yun.build.vid=0x2341
+yun.build.pid=0x8041
+yun.build.usb_product="Arduino Yun"
+yun.build.board=AVR_YUN
+yun.build.core=arduino
+yun.build.variant=yun
+yun.build.extra_flags={build.usb_flags}
 
 ##############################################################
 
@@ -234,6 +276,45 @@ megaADK.build.f_cpu=16000000L
 megaADK.build.board=AVR_ADK
 megaADK.build.core=arduino
 megaADK.build.variant=mega
+
+##############################################################
+
+leonardo.name=Arduino Leonardo
+leonardo.vid.0=0x2341
+leonardo.pid.0=0x0036
+leonardo.vid.1=0x2341
+leonardo.pid.1=0x8036
+leonardo.vid.2=0x2A03
+leonardo.pid.2=0x0036
+leonardo.vid.3=0x2A03
+leonardo.pid.3=0x8036
+
+leonardo.upload.tool=avrdude
+leonardo.upload.protocol=avr109
+leonardo.upload.maximum_size=28672
+leonardo.upload.maximum_data_size=2560
+leonardo.upload.speed=57600
+leonardo.upload.disable_flushing=true
+leonardo.upload.use_1200bps_touch=true
+leonardo.upload.wait_for_upload_port=true
+
+leonardo.bootloader.tool=avrdude
+leonardo.bootloader.low_fuses=0xff
+leonardo.bootloader.high_fuses=0xd8
+leonardo.bootloader.extended_fuses=0xcb
+leonardo.bootloader.file=caterina/Caterina-Leonardo.hex
+leonardo.bootloader.unlock_bits=0x3F
+leonardo.bootloader.lock_bits=0x2F
+
+leonardo.build.mcu=atmega32u4
+leonardo.build.f_cpu=16000000L
+leonardo.build.vid=0x2341
+leonardo.build.pid=0x8036
+leonardo.build.usb_product="Arduino Leonardo"
+leonardo.build.board=AVR_LEONARDO
+leonardo.build.core=arduino
+leonardo.build.variant=leonardo
+leonardo.build.extra_flags={build.usb_flags}
 
 ##############################################################
 
@@ -827,6 +908,43 @@ circuitplay32u4cat.upload.wait_for_upload_port=true
 circuitplay32u4cat.upload.tool=avrdude
 circuitplay32u4cat.vid.0=0x239A
 circuitplay32u4cat.pid.0=0x8011
+
+##############################################################
+
+yunmini.name=Arduino Yún Mini
+yunmini.upload.via_ssh=true
+
+yunmini.vid.0=0x2a03
+yunmini.pid.0=0x0050
+yunmini.vid.1=0x2a03
+yunmini.pid.1=0x8050
+
+yunmini.upload.tool=avrdude
+yunmini.upload.protocol=avr109
+yunmini.upload.maximum_size=28672
+yunmini.upload.maximum_data_size=2560
+yunmini.upload.speed=57600
+yunmini.upload.disable_flushing=true
+yunmini.upload.use_1200bps_touch=true
+yunmini.upload.wait_for_upload_port=true
+
+yunmini.bootloader.tool=avrdude
+yunmini.bootloader.low_fuses=0xff
+yunmini.bootloader.high_fuses=0xd8
+yunmini.bootloader.extended_fuses=0xfb
+yunmini.bootloader.file=caterina/Caterina-YunMini.hex
+yunmini.bootloader.unlock_bits=0x3F
+yunmini.bootloader.lock_bits=0x2F
+
+yunmini.build.mcu=atmega32u4
+yunmini.build.f_cpu=16000000L
+yunmini.build.vid=0x2a03
+yunmini.build.pid=0x8050
+yunmini.build.usb_product="Arduino Yún Mini"
+yunmini.build.board=AVR_YUNMINI
+yunmini.build.core=arduino
+yunmini.build.variant=yun
+yunmini.build.extra_flags={build.usb_flags}
 
 ##############################################################
 
