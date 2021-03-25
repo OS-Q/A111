@@ -46,6 +46,44 @@ yun.build.extra_flags={build.usb_flags}
 
 ##############################################################
 
+yunmini.name=Arduino Yún Mini
+yunmini.upload.via_ssh=true
+
+yunmini.vid.0=0x2a03
+yunmini.pid.0=0x0050
+yunmini.vid.1=0x2a03
+yunmini.pid.1=0x8050
+
+yunmini.upload.tool=avrdude
+yunmini.upload.protocol=avr109
+yunmini.upload.maximum_size=28672
+yunmini.upload.maximum_data_size=2560
+yunmini.upload.speed=57600
+yunmini.upload.disable_flushing=true
+yunmini.upload.use_1200bps_touch=true
+yunmini.upload.wait_for_upload_port=true
+
+yunmini.bootloader.tool=avrdude
+yunmini.bootloader.low_fuses=0xff
+yunmini.bootloader.high_fuses=0xd8
+yunmini.bootloader.extended_fuses=0xfb
+yunmini.bootloader.file=caterina/Caterina-YunMini.hex
+yunmini.bootloader.unlock_bits=0x3F
+yunmini.bootloader.lock_bits=0x2F
+
+yunmini.build.mcu=atmega32u4
+yunmini.build.f_cpu=16000000L
+yunmini.build.vid=0x2a03
+yunmini.build.pid=0x8050
+yunmini.build.usb_product="Arduino Yún Mini"
+yunmini.build.board=AVR_YUNMINI
+yunmini.build.core=arduino
+yunmini.build.variant=yun
+yunmini.build.extra_flags={build.usb_flags}
+
+
+##############################################################
+
 uno.name=Arduino Uno
 
 uno.vid.0=0x2341
@@ -255,73 +293,3 @@ ethernet.build.f_cpu=16000000L
 ethernet.build.board=AVR_ETHERNET
 ethernet.build.core=arduino
 
-##############################################################
-
-yunmini.name=Arduino Yún Mini
-yunmini.upload.via_ssh=true
-
-yunmini.vid.0=0x2a03
-yunmini.pid.0=0x0050
-yunmini.vid.1=0x2a03
-yunmini.pid.1=0x8050
-
-yunmini.upload.tool=avrdude
-yunmini.upload.protocol=avr109
-yunmini.upload.maximum_size=28672
-yunmini.upload.maximum_data_size=2560
-yunmini.upload.speed=57600
-yunmini.upload.disable_flushing=true
-yunmini.upload.use_1200bps_touch=true
-yunmini.upload.wait_for_upload_port=true
-
-yunmini.bootloader.tool=avrdude
-yunmini.bootloader.low_fuses=0xff
-yunmini.bootloader.high_fuses=0xd8
-yunmini.bootloader.extended_fuses=0xfb
-yunmini.bootloader.file=caterina/Caterina-YunMini.hex
-yunmini.bootloader.unlock_bits=0x3F
-yunmini.bootloader.lock_bits=0x2F
-
-yunmini.build.mcu=atmega32u4
-yunmini.build.f_cpu=16000000L
-yunmini.build.vid=0x2a03
-yunmini.build.pid=0x8050
-yunmini.build.usb_product="Arduino Yún Mini"
-yunmini.build.board=AVR_YUNMINI
-yunmini.build.core=arduino
-yunmini.build.variant=yun
-yunmini.build.extra_flags={build.usb_flags}
-
-
-##############################################################
-
-unowifi.name=Arduino Uno WiFi
-unowifi.vid.0=0x2A03
-unowifi.pid.0=0x0057
-
-unowifi.upload.tool=avrdude
-unowifi.upload.protocol=arduino
-unowifi.upload.maximum_size=32256
-unowifi.upload.maximum_data_size=2048
-unowifi.upload.speed=115200
-unowifi.upload.network.endpoint_upload=/pgm/upload
-unowifi.upload.network.endpoint_sync=/pgm/sync
-unowifi.upload.network.sync_return=204:SYNC
-unowifi.upload.network.endpoint_reset=/log/reset
-unowifi.upload.network.port=80
-
-unowifi.bootloader.tool=avrdude
-unowifi.bootloader.low_fuses=0xFF
-unowifi.bootloader.high_fuses=0xDE
-unowifi.bootloader.extended_fuses=0x05
-unowifi.bootloader.unlock_bits=0x3F
-unowifi.bootloader.lock_bits=0x0F
-unowifi.bootloader.file=optiboot/optiboot_atmega328.hex
-
-unowifi.build.mcu=atmega328p
-unowifi.build.f_cpu=16000000L
-unowifi.build.board=AVR_UNO_WIFI_DEV_ED
-unowifi.build.core=arduino
-unowifi.build.variant=standard
-unowifi.build.esp_ch_uart_br=19200
-unowifi.build.extra_flags=-DESP_CH_UART -DESP_CH_UART_BR={build.esp_ch_uart_br}

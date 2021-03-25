@@ -1,0 +1,8 @@
+*.lst
+*.tmp
+*.DS_Store
+*desktop*
+*.o
+*.pyc
+*.pio/
+*.vscode/
