@@ -1,15 +1,3 @@
-// I2C Digital Potentiometer
-// by Nicholas Zambetti <http://www.zambetti.com>
-// and Shawn Bonkowski <http://people.interaction-ivrea.it/s.bonkowski/>
-
-// Demonstrates use of the Wire library
-// Controls AD5171 digital potentiometer via I2C/TWI
-
-// Created 31 March 2006
-
-// This example code is in the public domain.
-
-
 #include <Wire.h>
 
 void setup() {
