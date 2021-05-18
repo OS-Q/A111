@@ -5,14 +5,6 @@
 #include <avr/eeprom.h>
 #include <avr/io.h>
 
-/***
-    EERef class.
-
-    This object references an EEPROM cell.
-    Its purpose is to mimic a typical byte of RAM, however its storage is the EEPROM.
-    This class has an overhead of two bytes, similar to storing a pointer to an EEPROM cell.
-***/
-
 struct EERef{
 
     EERef( const int index )

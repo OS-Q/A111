@@ -16,10 +16,6 @@
  MOSI: pin 11
  MISO: pin 12
  SCK: pin 13
-
- created 31 July 2010
- modified 14 August 2010
- by Tom Igoe
  */
 
 // the sensor communicates using SPI, so include the library:

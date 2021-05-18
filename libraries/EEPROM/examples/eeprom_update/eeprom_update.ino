@@ -1,16 +1,3 @@
-/***
-   EEPROM Update method
-
-   Stores values read from analog input 0 into the EEPROM.
-   These values will stay in the EEPROM when the board is
-   turned off and may be retrieved later by another sketch.
-
-   If a value has not changed in the EEPROM, it is not overwritten
-   which would reduce the life span of the EEPROM unnecessarily.
-
-   Released using MIT licence.
- ***/
-
 #include <EEPROM.h>
 
 /** the current address in the EEPROM (i.e. which byte we're going to write to next) **/

@@ -1,19 +1,3 @@
-/***
-    eeprom_put example.
-
-    This shows how to use the EEPROM.put() method.
-    Also, this sketch will pre-set the EEPROM data for the
-    example sketch eeprom_get.
-
-    Note, unlike the single byte version EEPROM.write(),
-    the put method will use update semantics. As in a byte
-    will only be written to the EEPROM if the data is actually
-    different.
-
-    Written by Christopher Andrews 2015
-    Released under MIT licence.
-***/
-
 #include <EEPROM.h>
 
 struct MyObject {
