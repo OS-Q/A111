@@ -419,7 +419,7 @@ void twi_stop(void)
   while(TWCR & _BV(TWSTO)){
     if(twi_timeout_us > 0ul){
       if (counter > 0ul){
-        _delay_us(us_per_loop);
+        _delay_us(10);
         counter--;
       } else {
         twi_handleTimeout(twi_do_reset_on_timeout);
@@ -490,7 +490,7 @@ void twi_handleTimeout(bool reset){
  * Desc     returns true if twi has seen a timeout
  *          optionally clears the timeout flag
  * Input    clear_flag: true if we should reset the hardware
- * Output   the value of twi_timed_out_flag when the function was called
+ * Output   none
  */
 bool twi_manageTimeoutFlag(bool clear_flag){
   bool flag = twi_timed_out_flag;
