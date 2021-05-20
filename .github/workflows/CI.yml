@@ -54,7 +54,9 @@ jobs:
         example:
           - "SPI"
           - "Wire"
+          - "CC1101"
           - "EEPROM"
+          - "FreeRTOS"
           - "SoftwareSerial"
         package: ["pio","qio"]
     runs-on: ubuntu-latest
