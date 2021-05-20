@@ -46,15 +46,17 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        examples:
-          - "libraries/SPI/examples"
-          - "libraries/Wire/examples"
-          - "libraries/EEPROM/examples"
-          - "libraries/SoftwareSerial/examples"
-
+        board:
+          - "uno"
+          - "leonardo"
+          - "megaatmega2560"
+        example:
+          - "SPI"
+          - "Wire"
+          - "EEPROM"
+          - "SoftwareSerial"
         package: ["pio","qio"]
-        os: [ubuntu-latest, windows-latest, macos-latest]
-    runs-on: ${{ matrix.os }}
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
         with:
@@ -81,4 +83,4 @@ jobs:
       - name: Build
         if: success()
         run: |
-          pio run -d ${{ matrix.examples }}
+          pio ci --board=${{ matrix.board }} ${{ matrix.example }}/examples/test/test.ino
