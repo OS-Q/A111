@@ -48,7 +48,8 @@ jobs:
       matrix:
         board:
           - "uno"
-          - "leonardo"
+          - "yunmini"
+          - "adafruit32u4"
           - "megaatmega2560"
         example:
           - "SPI"
@@ -83,4 +84,4 @@ jobs:
       - name: Build
         if: success()
         run: |
-          pio ci --board=${{ matrix.board }} ${{ matrix.example }}/examples/test/test.ino
+          pio ci --board=${{ matrix.board }} libraries/${{ matrix.example }}/examples/test/test.ino
